@@ -1,3 +1,8 @@
+<img width="720" height="1600" alt="scs" src="https://github.com/user-attachments/assets/6919afe4-d400-4745-9366-6c298303fd40" />
+<img width="720" height="1600" alt="WhatsApp Image 2026-04-23 at 2 40 06 AM" src="https://github.com/user-attachments/assets/6a3cda9c-9dba-4ea0-81ff-8453730a92c0" />
+<img width="720" height="1600" alt="WhatsApp Image 2026-04-23 at 2 40 05 AM" src="https://github.com/user-attachments/assets/12b5b3f2-b9a1-4281-a06a-370b95c4e2ad" />
+
+
 # 📱 OFFLINE MCQ QUIZ APP
 
 A modern Android quiz application built using **Jetpack Compose** and **Room Database**.
@@ -33,7 +38,7 @@ This app allows users to take quizzes offline with a smooth UI, timer-based ques
 
 | Start Screen                    | Quiz Screen                   | Result Screen                     |
 | ------------------------------- | ----------------------------- | --------------------------------- |
-| ![Start](screenshots/start.png) | ![Quiz](screenshots/quiz.png) | ![Result](screenshots/result.png) |
+| ![Start](https://github.com/user-attachments/assets/6919afe4-d400-4745-9366-6c298303fd40) | ![Quiz]([screenshots/quiz.png](https://github.com/user-attachments/assets/6a3cda9c-9dba-4ea0-81ff-8453730a92c0)) | ![Result]([screenshots/result.png](https://github.com/user-attachments/assets/12b5b3f2-b9a1-4281-a06a-370b95c4e2ad)) |
 
 ---
 
