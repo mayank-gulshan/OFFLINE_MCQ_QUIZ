@@ -7,18 +7,15 @@ import androidx.room.TypeConverter
 @Entity(tableName = "questions")
 data class Question(
     @PrimaryKey(autoGenerate = true) val id:Int,
-    val Question: String,
-    val Options:List<String>,
-    val CorrectAnswer:Int
+    val question: String,
+    val options:List<String>,
+    val correctAnswer:Int
 )
 
 class Convertors{
-   @TypeConverter
-   fun fromList(list:List<String>):String{
-       return list.joinToString(",")
-   }
     @TypeConverter
-    fun toList(string:String):List<String>{
-        return string.split(",")
-   }
+    fun fromList(list: List<String>): String = list.joinToString("||")
+
+    @TypeConverter
+    fun toList(string: String): List<String> = string.split("||")
 }

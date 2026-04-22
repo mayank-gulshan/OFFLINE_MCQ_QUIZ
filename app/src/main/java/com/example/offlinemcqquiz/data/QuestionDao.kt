@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface QuestionDao{
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(questions:List<Question>)
+    suspend fun insert(question: Question)
     @Query("SELECT * FROM questions")
      fun getAllQuestions(): Flow<List<Question>>
 }
