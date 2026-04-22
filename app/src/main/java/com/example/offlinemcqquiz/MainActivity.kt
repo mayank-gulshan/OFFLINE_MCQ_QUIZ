@@ -7,41 +7,38 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.offlinemcqquiz.data.StartScreen
 import com.example.offlinemcqquiz.ui.theme.OFFLINEMCQQUIZTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         setContent {
             OFFLINEMCQQUIZTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+
+                var started by remember { mutableStateOf(false) }
+
+                if (!started) {
+                    StartScreen(
+                        onStartClick = { started = true }
                     )
+                } else {
+                    Scaffold(
+                        modifier = Modifier.fillMaxSize()
+                    ) {
+                        QuizScreen(
+                            modifier = Modifier.padding(it)
+                        )
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    OFFLINEMCQQUIZTheme {
-        Greeting("Android")
     }
 }
