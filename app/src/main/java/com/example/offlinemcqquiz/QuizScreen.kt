@@ -176,7 +176,7 @@ fun QuizScreen(viewModel: QuizViewModel = viewModel(), modifier: Modifier = Modi
         Spacer(Modifier.height(20.dp))
 
         Text(
-            text = "General Knowledge",
+            text = "Grammar",
             color = Color.White.copy(alpha = 0.7f)
         )
 
