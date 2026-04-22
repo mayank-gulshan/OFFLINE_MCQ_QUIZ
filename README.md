@@ -79,7 +79,7 @@ com.example.offlinemcqquiz
 
 ## 📦 APK (Optional)
 
-[⬇️ Download App](https://drive.google.com/uc?export=download&id=1uCqHNrbl-FVlyfbhElpeQ8vKGby0Cvjc)
+[⬇️ Download App]([https://drive.google.com/uc?export=download&id=1uCqHNrbl-FVlyfbhElpeQ8vKGby0Cvjc](https://drive.google.com/file/d/1uCqHNrbl-FVlyfbhElpeQ8vKGby0Cvjc/view))
 
 ---
 
