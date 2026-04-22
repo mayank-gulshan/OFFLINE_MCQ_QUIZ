@@ -6,11 +6,25 @@ class QuestionRepository(private val dao: QuestionDao) {
 
     suspend fun insertSampleData() {
         val sample = listOf(
-            Question(1, "What is the capital of India?", listOf("Mumbai", "Delhi", "Kolkata", "Chennai"), 1),
-            Question(2, "Who is known as the Father of the Nation (India)?", listOf("Nehru", "Gandhi", "Subhash Bose", "Patel"), 1),
-            Question(3, "Which planet is known as the Red Planet?", listOf("Earth", "Mars", "Jupiter", "Saturn"), 1),
-            Question(4, "Who invented the light bulb?", listOf("Newton", "Einstein", "Edison", "Tesla"), 2),
-            Question(5, "Which is the largest ocean in the world?", listOf("Atlantic", "Indian", "Pacific", "Arctic"), 2)
+            Question(1, "Choose the correct sentence:",
+                listOf("She go to school daily", "She goes to school daily", "She going to school daily", "She gone to school daily"),
+                1),
+
+            Question(2, "Fill in the blank: He ___ playing football.",
+                listOf("is", "are", "am", "be"),
+                0),
+
+            Question(3, "Choose the correct past tense of 'eat':",
+                listOf("eated", "ate", "eaten", "eat"),
+                1),
+
+            Question(4, "Identify the correct article: ___ apple a day keeps the doctor away.",
+                listOf("A", "An", "The", "No article"),
+                1),
+
+            Question(5, "Choose the correct plural form of 'child':",
+                listOf("childs", "childes", "children", "childrens"),
+                2)
         )
         for (q in sample) {
             dao.insert(q)
